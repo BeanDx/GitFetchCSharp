@@ -39,7 +39,7 @@ public class FetchCommand : AsyncCommand<FetchCommandSettings>
         int starredCount = 0;
 
         await AnsiConsole.Status()
-            .StartAsync("Получение данных с GitHub API...", async ctx =>
+            .StartAsync("Getting data from the GitHub API...", async ctx =>
             {
                 try
                 {
