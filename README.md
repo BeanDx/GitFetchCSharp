@@ -52,7 +52,7 @@ If you are using a terminal that **does not** support inline images (like the de
 
 You have two options for installing `GitFetch-CSharp`.
 
-### 1. From a Release (Recommended)
+### 1. From a Release
 
 This is the easiest way to get started.
 
@@ -60,12 +60,16 @@ This is the easiest way to get started.
 2.  Download the pre-compiled binary.
 3.  Place the downloaded file somewhere in your system's `PATH`.
 
-#### For Arch Linux users (via AUR)
-
-If you are on Arch Linux, the easiest way to install is by using an AUR helper like `yay`.
+#### With curl (just 3 commands =))
 
 ```bash
-yay -S gitfetch-bin
+curl -L -o gitfetch "https://github.com/BeanDx/GitFetchCSharp/releases/download/v2.0.0/GithubFetch-CSharp"
+chmod +x gitfetch
+sudo mv gitfetch /usr/local/bin
+```
+
+```bash
+gitfetch your-github-username
 ```
 ---
 
